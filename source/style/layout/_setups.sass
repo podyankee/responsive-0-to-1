@@ -1,0 +1,72 @@
+html
+	font-size: 16px
+	font-family: $regular-font
+
+body
+	margin: 0
+	-webkit-font-smoothing: antialiased
+	min-width: 320px
+	overflow-x: hidden
+	line-height: 18px
+	color: $text-color
+
+
+section
+	position: relative
+
+
+ul, li
+	padding: 0
+	margin: 0
+	list-style: none
+
+p
+	margin: 0
+
+h1, h2, h3, h4, h5, h6
+	margin-top: 0
+	margin-bottom: 0
+	font-weight: normal
+
+*, *::after, *::before
+	box-sizing: border-box
+a
+	text-decoration: none
+	display: inline-block
+	color: inherit
+	transition: $trs
+
+audio, canvas, iframe, img, svg, video, textarea
+	vertical-align: middle
+
+.container
+	padding: 0 5%
+	margin: auto
+
+textarea, input
+	outline: none
+button
+	padding: 0
+
+.title
+	font-size: 24px
+	line-height: 28px
+	font-family: "roboto-condensed"
+	position: relative
+	padding-bottom: 28px
+	margin-bottom: 40px
+	&::after
+		content: ''
+		position: absolute
+		width: 90px
+		height: 8px
+		background-color: $accent
+		bottom: 0
+		left: 0
+		right: 0
+		margin: 0 auto
+@media ( min-width: 640px )
+	.title
+		font-size: 48px
+		line-height: 56px
+

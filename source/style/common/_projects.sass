@@ -1,0 +1,37 @@
+.project
+	text-align: center
+	padding: 20px 0 20px
+	background: linear-gradient(180deg, #2B4074 0%, rgba(43, 64, 116, 0) 100%);
+	&__title
+		color: $white
+		margin-bottom: 40px
+		&::after
+			background-color: $white
+	&__item-img
+		min-height: 250px
+		border-radius: 4px
+		padding: 12px 14px
+		transition: $trs
+		&:hover
+			.project__item-inner
+				opacity: 1
+	&__item-inner
+		display: flex
+		justify-content: center
+		align-items: center
+		background-color: $white
+		background-color: rgba($bg-color, 0.83)
+		border-radius: 4px
+		min-height: 227px
+		opacity: 0
+		transition: $trs
+	&__item-info, &__item-saarch
+		margin: 0 7px
+	&__item-link
+		display: block
+		padding: 20px 0
+		letter-spacing: 2px
+		line-height: 19px
+		color: $accent
+		font-family: 'roboto-condensed'
+		font-weight: 700

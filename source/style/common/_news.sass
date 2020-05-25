@@ -1,0 +1,70 @@
+.news
+	background-color: #F9F6E5
+	padding-top: 40px
+	padding-bottom: 50px
+	&__title
+		text-align: center
+		font-size: 24px
+		line-height: 38px
+		color: $text-dark
+		&::after
+			width: 50px
+.item-news
+	display: block
+	position: relative
+	border-radius: 4px
+	overflow: hidden
+	transition: $trs
+	&:hover
+		border: 10px solid #2B4074
+		&::after
+			opacity: 1
+		.item-news__title
+			color: #fff
+			background-color: #2B4074
+			bottom: 22px
+		.item-news__content
+			opacity: 1
+			visibility: visible
+	&::after
+		content: ''
+		display: block
+		position: absolute
+		z-index: 1
+		top: 0
+		left: 0
+		bottom: 0
+		right: 0
+		opacity: 0
+		visibility: hidden
+		background: rgba(43, 64, 116, 0.3)
+		transition: $trs
+	&__img
+		width: 100%
+		img
+			+img-responsive
+	&__title
+		background-color: $white
+		position: absolute
+		z-index: 2
+		bottom: 0
+		font-size: 18px
+		line-height: 21px
+		color: $text-dark
+		font-family: "roboto-condensed"
+		font-weight: 700
+		letter-spacing: 2px
+		padding: 8px 0 10px 20px
+		width: 100%
+		transition: $trs
+	&__content
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		z-index: 2
+		opacity: 0
+		img
+			width: 28px
+			height: 28px
+			filter: invert(100%) sepia(100%) saturate(16%) hue-rotate(210deg) brightness(103%) contrast(100%)

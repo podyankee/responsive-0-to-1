@@ -1,0 +1,402 @@
+@media ( min-width: 640px )
+	.container
+		padding: 0 5%
+	.header__inner
+		min-height: 100px
+	.logo_link
+		margin-left: 14px
+	.head, .top-slider__item
+		min-height: 386px
+	.top-slider
+		&__title
+			font-size: 60px
+			line-height: 60px
+			padding: 50px 15px
+			margin: 0 auto 30px
+			max-width: 520px
+		&__btn
+			display: block
+		.slick-dots
+			bottom: 50px
+		.slick-arrow
+			width: 56px
+			height: 56px
+			border: none
+			position: absolute
+			right: 0
+			z-index: 5
+		.slick-prev
+			background-color: $accent
+			top: calc(50% - 56px)
+		.slick-next
+			background-color: $bg-color
+			bottom: calc(50% - 56px)
+	.services
+		padding: 24px 0 0
+		&__title
+			margin-bottom: 20px
+			padding-bottom: 0
+			&::after
+				display: none
+		&__descr
+			font-size: 24px
+			padding-bottom: 38px
+			margin-bottom: 31px
+			position: relative
+			&::after
+				content: ''
+				position: absolute
+				width: 100px
+				height: 8px
+				background-color: $accent
+				margin: 0 auto
+				bottom: 0
+				left: 0
+				right: 0
+		&__text
+			font-size: 18px
+			line-height: 24px
+		&__items
+			display: flex
+			flex-wrap: wrap
+			margin: 0 -30px
+		&__item
+			width: 50%
+			&:nth-child(even)
+				border-left: none
+			&:last-child
+				border-bottom: none
+	.project
+		padding: 40px 0 20px
+		&__item-img
+			min-height: 460px
+			padding: 21px 24px
+		&__item-inner
+			min-height: 417px
+		&__item-link
+			font-size: 20px
+			line-height: 23px
+	.team
+		padding: 46px 0 53px
+		&__images
+			min-width: 100%
+		&__title
+			margin-bottom: 40px
+		&__text
+			margin-bottom: 56px
+	.news__title
+		font-size: 48px
+		line-height: 38px
+		&::after
+			width: 100px
+	.news__items
+		display: flex
+		flex-flow: column wrap
+		max-height: 1420px
+		align-content: space-between
+		&::before
+			content: ""
+			flex-basis: 100%
+			width: 1px
+			order: 2
+			background-color: pink
+	.item-break
+		display: none
+	.news__item
+		width: 270px
+		margin-bottom: 2%
+	.news__item:nth-child(1), .news__item:nth-child(3), .news__item:nth-child(6)
+		order: 1
+	.news__item:nth-child(2), .news__item:nth-child(4), .news__item:nth-child(5), .news__item:nth-child(7), .news__item:nth-child(8)
+		order: 2
+@media ( min-width: 690px )
+	.container
+		padding: 0 7%
+@media ( min-width: 723px )
+	.container
+		padding: 0 10%
+@media ( min-width: 768px )
+	.container
+		padding: 0 15%
+	.logo_link
+		margin-left: 0
+	.top-slider
+		&__item
+			min-height: 465px
+		&__title
+			padding: 87px 0 0
+			margin: 0 auto 0
+			&::after
+				display: none
+		&__text
+			display: block
+			max-width: 587px
+			margin: 0 auto
+	.call
+		text-align: left
+		&__inner
+			display: flex
+			align-items: center
+			justify-content: space-between
+		&__box
+			max-width: 427px
+		&__text
+			margin-bottom: 0
+	.services
+		padding: 50px 0 0
+		&__title
+			margin-bottom: 30px
+		&__descr
+			text-align: left
+			&::after
+				margin-left: 0
+		&__text
+			margin-bottom: 27px
+			text-align: left
+		&__items
+			margin: 0 -40px
+		&__item
+			min-height: 334px
+			padding: 0 65px
+			&:hover
+				padding: 0 18px
+				.services__item-inner
+					padding: 35px 60px 5px
+					min-height: 288px
+	.project
+		padding: 80px 0 60px
+		&__items
+			display: flex
+			flex-wrap: wrap
+			justify-content: space-between
+		&__item-img
+			min-height: 282px
+			width: 317px
+			padding: 12px 14px
+		&__item-inner
+			min-height: 256px
+		&__item-link
+			padding: 30px 0
+	.team
+		padding: 4px 0 48px
+		text-align: left
+		&__inner
+			display: flex
+		&__images
+			min-width: 240px
+			width: 240px
+			margin-bottom: 0
+			margin-right: 34px
+			height: 100%
+		&__title
+			font-size: 36px
+			line-height: 38px
+			margin-bottom: 7px
+			padding-bottom: 28px
+			&::after
+				margin-left: 0
+		&__text
+			font-size: 18px
+			margin-bottom: 30px
+		&__btn
+			font-size: 18px
+	.news__title
+		font-size: 36px
+@media ( min-width: 920px )
+	.container
+		padding: 0 20%
+@media ( min-width: 1024px )
+	.container
+		max-width: 1200px
+		padding: 0 5%
+	.top-slider
+		&__item
+			min-height: 618px
+		&__title
+			padding-top: 101px
+			font-size: 84px
+			line-height: 84px
+			letter-spacing: 2px
+			max-width: 750px
+		.slick-dots
+			bottom: 80px
+	.call
+		&__box
+			max-width: 699px
+	.services
+		padding: 52px 0 0
+		&__title
+			margin-bottom: 60px
+		&__descr
+			padding-bottom: 46px
+			margin-bottom: 40px
+		&__text
+			margin-bottom: 32px
+			max-width: 680px
+		&__item
+			width: 25%
+			min-height: 277px
+			padding: 0 17px
+			&:nth-child(2), &:nth-child(6)
+				border-right: none
+			&:hover
+				padding: 0 17px
+				.services__item-inner
+					margin: 10px 0
+					padding: 21px 9px 5px
+					min-height: 255px
+	.project
+		&__items
+			display: flex
+			flex-wrap: wrap
+			justify-content: center
+		&__item-img
+			margin: 12px
+	.team
+		padding: 80px 0
+		&__images
+			min-width: 395px
+			width: 395px
+			margin-right: 60px
+		&__title
+			margin-top: 10px
+			margin-bottom: 19px
+		&__text
+			line-height: 24px
+			margin-bottom: 12px
+		&__btn
+			font-size: 18px
+		.news__title
+		font-size: 36px
+	.news__items
+		max-height: 1100px
+	.news__title
+		font-size: 48px
+		line-height: 56px
+	.news__item:nth-child(1), .news__item:nth-child(4), .news__item:nth-child(7)
+		order: 1
+	.news__item:nth-child(2), .news__item:nth-child(5), .news__item:nth-child(8)
+		order: 2
+	.news__item:nth-child(3), .news__item:nth-child(6)
+		order: 3
+	.news__items
+		&::before, &::after
+			content: ""
+			flex-basis: 100%
+			width: 1px
+			order: 2
+			background-color: pink
+@media ( min-width: 1120px )
+	.container
+		padding: 0 7%
+@media ( min-width: 1440px )
+	.container
+		max-width: 1320px
+		padding: 5%
+	.menu__btn
+		margin-right: 90px
+	.top-slider
+		&__item
+			min-height: 668px
+		&__title
+			padding-top: 107px
+			font-size: 96px
+			line-height: 96px
+			letter-spacing: 2px
+			max-width: 865px
+		&__text
+			font-size: 24px
+			line-height: 26px
+			max-width: 886px
+	.call
+		&__inner
+			padding: 0 80px
+		&__box
+			max-width: 796px
+	.slick-arrow
+		width: 70px
+		height: 70px
+	.slick-prev
+		top: calc(50% - 70px)
+	.slick-next
+		bottom: calc(50% - 70px)
+	.services
+		padding: 0
+		&__inner
+			display: flex
+			justify-content: space-between
+			margin: 0 -100px 0 -50px
+		&__head
+			min-width: 350px
+			max-width: 350px
+			margin-right: 100px
+		&__title
+			text-align: left
+			margin: 90px 0 70px
+		&__descr
+			padding-bottom: 38px
+			margin-bottom: 35px
+		&__items
+			margin: 0
+		&__item
+			width: 230px
+			height: 273px
+			padding: 0 5px
+			&:hover
+				padding: 0 5px
+				.services__item-inner
+					margin: 5px 0
+					padding: 10px 3px 5px
+					min-height: 255px
+	.project
+		&__items
+			justify-content: space-between
+			flex-wrap: nowrap
+		&__item-img
+			width: 300px
+			margin: 0
+	.team
+		padding: 50px 0 110px
+		&__images
+			min-width: 470px
+			width: 470px
+			margin-right: 93px
+		&__title
+			margin-bottom: 40px
+			&::after
+				margin-left: 0
+		&__text
+			width: 553px
+			margin-bottom: 40px
+	.news__items
+		max-height: 760px
+		&::before, &::after
+			display: none
+	.news__title
+		font-size: 48px
+		line-height: 56px
+	.news__item:nth-child(1), .news__item:nth-child(5),
+		order: 1
+	.news__item:nth-child(2), .news__item:nth-child(6),
+		order: 2
+	.news__item:nth-child(3), .news__item:nth-child(7)
+		order: 3
+	.news__item:nth-child(4), .news__item:nth-child(8)
+		order: 4
+	.item-break
+		display: block
+		flex-basis: 100%
+		width: 1px
+		background: pink
+		margin: 0
+		&--1
+			order: 2
+		&--2
+			order: 3
+		&--3
+			order: 4
+
+
+
+// @media ( min-width: 640px )
+
