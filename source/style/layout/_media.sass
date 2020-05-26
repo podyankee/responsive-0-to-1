@@ -109,6 +109,50 @@
 		order: 1
 	.news__item:nth-child(2), .news__item:nth-child(4), .news__item:nth-child(5), .news__item:nth-child(7), .news__item:nth-child(8)
 		order: 2
+	.footer
+		text-align: left
+		&__bottom
+			display: flex
+			flex-wrap: wrap
+	.connection
+		font-size: 24px
+		line-height: 26px
+		margin-top: 20px
+		margin-bottom: 45px
+	.socials
+		&__list
+			display: flex
+			border-top: 1px solid #7EBF84
+			border-bottom: 1px solid #7EBF84
+			li
+				width: 25%
+				text-align: center
+				padding-top: 20px
+				padding-bottom: 20px
+				margin-bottom: 0
+				border-right: 1px solid #7EBF84
+				&:last-child
+					border-right: 0
+	.footer__bottom
+		margin-bottom: 50px
+	.contacts, .help
+		width: 60%
+	.help, .menu
+		margin-bottom: 0
+	.up
+		padding-top: 11px
+		padding-bottom: 11px
+		display: flex
+		padding-right: 14px
+		&__link
+			margin-top: 0
+			margin-left: auto
+			span
+				display: inline-block
+				margin: 0
+		.icon-up
+			display: inline-block
+			margin: 0
 @media ( min-width: 690px )
 	.container
 		padding: 0 7%
@@ -202,6 +246,18 @@
 			font-size: 18px
 	.news__title
 		font-size: 36px
+	.footer
+		.container
+			padding: 0 45px
+		&__bottom
+			margin-bottom: 30px
+	.connection
+		font-size: 36px
+		line-height: 32px
+	.contacts, .help
+		width: 50%
+	.contacts, .address
+		margin-bottom: 20px
 @media ( min-width: 920px )
 	.container
 		padding: 0 20%
@@ -286,6 +342,20 @@
 			width: 1px
 			order: 2
 			background-color: pink
+	.footer
+		.container
+			padding: 0 40px
+	.connection
+		margin-top: 80px
+		margin-bottom: 70px
+		max-width: 615px
+	.footer__bottom
+		margin-bottom: 120px
+	.socials__list
+		margin-bottom: 60px
+	.contacts, .address, .help, .menu
+		margin-bottom: 0
+		width: 25%
 @media ( min-width: 1120px )
 	.container
 		padding: 0 7%
@@ -395,6 +465,17 @@
 			order: 3
 		&--3
 			order: 4
+	.footer
+		.container
+			padding: 0 80px
+	.connection
+		font-size: 24px
+	.socials
+		margin-bottom: 60px
+	.footer__bottom
+		margin-bottom: 120px
+	.up
+		padding-right: 140px
 
 
 
